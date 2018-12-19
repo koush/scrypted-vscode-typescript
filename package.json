@@ -1,0 +1,16 @@
+{
+   "scripts": {
+      "prescrypted-vscode-launch": "scrypted-webpack",
+      "scrypted-vscode-launch": "scrypted-deploy-debug",
+      "scrypted-deploy-debug": "scrypted-deploy-debug",
+      "scrypted-debug": "scrypted-debug",
+      "scrypted-deploy": "scrypted-deploy",
+      "scrypted-webpack": "scrypted-webpack"
+   },
+   "devDependencies": {
+      "scrypted-deploy": "^1.0.6"
+   },
+   "dependencies": {
+      "axios": "^0.18.0"
+   }
+}
