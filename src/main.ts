@@ -1,12 +1,10 @@
 // log is a local script variable provided by Scrypted.
-declare var log: any;
-
-// need to polyfill Promises
-// import "core-js/modules/es6.promise";
-declare var Promise: any;
-
 import axios from 'axios';
 import { OnOff } from '@scrypted/sdk';
+import sdk from '@scrypted/sdk';
+const { log, ScriptSettings } = sdk;
+
+ScriptSettings.putString("foo", "bar");
 
 log.i('Hello World. This will create a virtual OnOff device.');
 
