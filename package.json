@@ -7,6 +7,13 @@
       "scrypted-deploy": "scrypted-deploy",
       "scrypted-webpack": "scrypted-webpack"
    },
+   "scrypted": {
+      "name": "TypeScript Light",
+      "type": "Device",
+      "interfaces": [
+         "OnOff"
+      ]
+   },
    "dependencies": {
       "@scrypted/sdk": "0.0.9",
       "axios": "^0.18.0"

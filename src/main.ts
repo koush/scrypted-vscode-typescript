@@ -2,9 +2,9 @@
 import axios from 'axios';
 import { OnOff } from '@scrypted/sdk';
 import sdk from '@scrypted/sdk';
-const { log, ScriptSettings } = sdk;
+const { log, scriptSettings } = sdk;
 
-ScriptSettings.putString("foo", "bar");
+scriptSettings.putString("foo", "bar");
 
 log.i('Hello World. This will create a virtual OnOff device.');
 
