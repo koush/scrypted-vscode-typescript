@@ -11,7 +11,7 @@ class Device extends ScryptedDeviceBase implements OnOff {
         log.i('turnOff was called!');
         this.on = false;
     }
-    async turnOn(): Promise<void> {
+    async turnOn() {
         // set a breakpoint here.
         log.i('turnOn was called!');
 
