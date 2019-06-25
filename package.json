@@ -1,5 +1,6 @@
 {
    "scripts": {
+      "prepublishOnly": "NODE_ENV=production scrypted-webpack",
       "prescrypted-vscode-launch": "scrypted-webpack",
       "scrypted-vscode-launch": "scrypted-deploy-debug",
       "scrypted-deploy-debug": "scrypted-deploy-debug",
