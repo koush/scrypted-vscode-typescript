@@ -6,22 +6,20 @@
     "configurations": [
         {
             "name"        : "Scrypted Debugger",
-            "type"        : "duk",
+            "type"        : "quickjs",
             "request"     : "attach",
-            "stopOnEntry" : false,
             "address"     : "${config:scrypted.debugHost}",
             "port"        : 9091,
-            "localRoot"   : "${workspaceRoot}",
+            "localRoot"   : "/Volumes/Dev/Scrypted/quack-polyfill/quack-polyfill-java/src/js/dist",
+            "mode"         : "connect",
 
             "preLaunchTask": "scrypted: deploy+debug",
 
             // required due to webpack and transpiling
-            "sourceMaps"  : true,
-            "outDir"      : "${workspaceRoot}/out",
-
-            // uncomment to debug the Duktape Debugger
-            // "debugLog"    : true,
-            // "debugServer": 4711,
+            "sourceMaps"  : {
+                "${workspaceRoot}/out/main.quickjs.js.map": "",
+            }
+            // ,"trace": true
         },
     ]
 }
