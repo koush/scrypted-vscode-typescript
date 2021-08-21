@@ -15,7 +15,7 @@ class Device extends ScryptedDeviceBase implements OnOff {
         super();
         this.on = this.on || false;
     }
-    turnOff(): void {
+    async turnOff() {
         log.i('turnOff was called!');
         this.on = false;
     }
