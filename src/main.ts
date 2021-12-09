@@ -16,16 +16,17 @@ class Device extends ScryptedDeviceBase implements OnOff {
         this.on = this.on || false;
     }
     async turnOff() {
-        log.i('turnOff was called!');
+        this.log.i('turnOff was called!');
+        this.console.log('turnOff was called!');
         this.on = false;
     }
     async turnOn() {
         // set a breakpoint here.
-        log.i('turnOn was called!');
+        this.console.log('turnOn was called!');
 
-        log.i("Let's pretend to perform a web request on an API that would turn on a light.");
+        this.console.log("Let's pretend to perform a web request on an API that would turn on a light.");
         const ip = await axios.get('http://jsonip.com');
-        log.i(`my ip: ${ip.data.ip}`);
+        this.console.log(`my ip: ${ip.data.ip}`);
 
         this.on = true;
     }

@@ -18,9 +18,9 @@
    },
    "dependencies": {
       "@types/node": "^16.6.1",
-      "axios": "^0.19.0"
+      "axios": "^0.24.0"
    },
    "devDependencies": {
-      "@scrypted/sdk": "^0.0.82"
+      "@scrypted/sdk": "^0.0.128"
    }
 }
