@@ -11,7 +11,7 @@
    },
    "scrypted": {
       "name": "TypeScript Light",
-      "type": "Device",
+      "type": "Light",
       "interfaces": [
          "OnOff"
       ]
