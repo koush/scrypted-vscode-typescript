@@ -6,3 +6,4 @@
 4. Press Launch (green arrow button in the Run and Debug sidebar) to start debugging.
   * The terminal may show a failure and prompt you to log in with `npx scrypted login`. You'll only need to do this one. You can then relaunch afterwards.
  
+<img width="538" alt="image" src="https://user-images.githubusercontent.com/73924/151676616-c730eb56-26dd-466d-b7f5-25783300b3bc.png">
