@@ -1,4 +1,4 @@
-# Sample Scrypted Plugin with Visual Studio Code support
+# Sample Scrypted Plugin
 
 1. npm install
 2. Open this plugin director yin VS Code.
