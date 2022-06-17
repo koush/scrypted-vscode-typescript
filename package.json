@@ -1,13 +1,16 @@
 {
    "name": "@scrypted/vscode-typescript",
    "scripts": {
+      "postinstall": "scrypted-setup-project",
+      "build": "scrypted-webpack",
       "prepublishOnly": "NODE_ENV=production scrypted-webpack",
       "prescrypted-vscode-launch": "scrypted-webpack",
       "scrypted-vscode-launch": "scrypted-deploy-debug",
       "scrypted-deploy-debug": "scrypted-deploy-debug",
       "scrypted-debug": "scrypted-debug",
       "scrypted-deploy": "scrypted-deploy",
-      "scrypted-webpack": "scrypted-webpack"
+      "scrypted-readme": "scrypted-readme",
+      "scrypted-package-json": "scrypted-package-json"
    },
    "scrypted": {
       "name": "TypeScript Light",
@@ -21,6 +24,6 @@
       "axios": "^0.24.0"
    },
    "devDependencies": {
-      "@scrypted/sdk": "^0.0.145"
+      "@scrypted/sdk": "^0.0.199"
    }
 }
