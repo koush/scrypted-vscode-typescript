@@ -3,7 +3,6 @@
 // under the "scrypted" key.
 import axios from 'axios';
 import { OnOff, ScryptedDeviceBase } from '@scrypted/sdk';
-import sdk from '@scrypted/sdk';
 
 console.log('Hello World. This will create a virtual OnOff device.');
 // OnOff is a simple binary switch. See "interfaces"  in package.json
