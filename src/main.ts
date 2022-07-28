@@ -10,7 +10,7 @@ log.i('Hello World. This will create a virtual OnOff device.');
 // OnOff is a simple binary switch. See "interfaces"  in package.json
 // to add support for more capabilities, like Brightness or Lock.
 
-class Device extends ScryptedDeviceBase implements OnOff {
+class TypescriptLight extends ScryptedDeviceBase implements OnOff {
     constructor() {
         super();
         this.on = this.on || false;
@@ -31,4 +31,4 @@ class Device extends ScryptedDeviceBase implements OnOff {
     }
 }
 
-export default new Device();
+export default TypescriptLight;
