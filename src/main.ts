@@ -2,15 +2,15 @@
 // package.json contains the metadata (name, interfaces) about this device
 // under the "scrypted" key.
 import axios from 'axios';
-import { OnOff, ScryptedDeviceBase } from '@scrypted/sdk';
+import { DeviceProvider, OnOff, ScryptedDeviceBase } from '@scrypted/sdk';
 
 console.log('Hello World. This will create a virtual OnOff device.');
 // OnOff is a simple binary switch. See "interfaces"  in package.json
 // to add support for more capabilities, like Brightness or Lock.
 
 class TypescriptLight extends ScryptedDeviceBase implements OnOff {
-    constructor() {
-        super();
+    constructor(nativeId?: string) {
+        super(nativeId);
         this.on = this.on || false;
     }
     async turnOff() {
