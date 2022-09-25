@@ -1,8 +1,8 @@
 // https://developer.scrypted.app/#getting-started
 // package.json contains the metadata (name, interfaces) about this device
 // under the "scrypted" key.
+import { OnOff, ScryptedDeviceBase } from '@scrypted/sdk';
 import axios from 'axios';
-import { DeviceProvider, OnOff, ScryptedDeviceBase } from '@scrypted/sdk';
 
 console.log('Hello World. This will create a virtual OnOff device.');
 // OnOff is a simple binary switch. See "interfaces"  in package.json
