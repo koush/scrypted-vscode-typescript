@@ -1,7 +1,8 @@
 {
    "name": "@scrypted/vscode-typescript",
    "scripts": {
-      "postinstall": "scrypted-setup-project",
+      "scrypted-setup-project": "scrypted-setup-project",
+      "prescrypted-setup-project": "scrypted-package-json",
       "build": "scrypted-webpack",
       "prepublishOnly": "NODE_ENV=production scrypted-webpack",
       "prescrypted-vscode-launch": "scrypted-webpack",
@@ -24,6 +25,6 @@
       "axios": "^0.24.0"
    },
    "devDependencies": {
-      "@scrypted/sdk": "^0.1.13"
+      "@scrypted/sdk": "^0.2.49"
    }
 }
