@@ -2,7 +2,6 @@
 // package.json contains the metadata (name, interfaces) about this device
 // under the "scrypted" key.
 import { OnOff, ScryptedDeviceBase } from '@scrypted/sdk';
-import axios from 'axios';
 
 console.log('Hello World. This will create a virtual OnOff device.');
 // OnOff is a simple binary switch. See "interfaces"  in package.json
@@ -22,8 +21,9 @@ class TypescriptLight extends ScryptedDeviceBase implements OnOff {
         this.console.log('turnOn was called!');
 
         this.console.log("Let's pretend to perform a web request on an API that would turn on a light.");
-        const ip = await axios.get('http://jsonip.com');
-        this.console.log(`my ip: ${ip.data.ip}`);
+        const response = await fetch('http://jsonip.com');
+        const json = await response.json();
+        this.console.log(`my ip: ${json.ip}`);
 
         this.on = true;
     }
