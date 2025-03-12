@@ -14,6 +14,7 @@
       "scrypted-package-json": "scrypted-package-json"
    },
    "scrypted": {
+      "rollup": true,
       "name": "TypeScript Light",
       "type": "Light",
       "interfaces": [
